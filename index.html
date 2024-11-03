@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Счетчик выпитой воды</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Счетчик выпитой воды</h1>
+        <p>Ваша дневная норма: <span id="daily-goal">2000</span> мл</p>
+        <p>Выпито: <span id="water-consumed">0</span> мл</p>
+        <button onclick="addWater(250)" class="btn">+250 мл</button>
+        <input type="number" id="manual-input" placeholder="Введите количество">
+        <button onclick="manualAdd()" class="btn">Добавить</button>
+        <h2>Статистика за последний час</h2>
+        <canvas id="chart"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
